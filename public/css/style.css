@@ -1,0 +1,117 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-seri;
+}
+html{
+    width: 100vw;
+    height: fit-content;
+    font-size: 10px;
+    overflow-x: hidden;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+}
+
+body .screen{
+    width: 100%;
+    height: 100%;
+    background-color: #0000009c;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+body form{
+    width: fit-content;
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: #1B121299;
+    box-sizing: content-box;
+    padding: 3rem;
+    border-radius: 0.5rem;
+    border: 1px solid gray;
+}
+
+body form .logo{
+    width: 30rem;
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+body form .logo img{
+    width: auto;
+    height: 20rem;
+}
+body form .logo h1{
+    font-size: 2rem;
+    text-transform: capitalize;
+    text-align: center;
+    color: #ffffff;
+    font-weight: 600;
+}
+body form .login{
+    width: 30rem;
+    height: fit-content;
+}
+body form .login label{
+    display: block;
+    width: 100%;
+    height: fit-content;
+    margin-bottom: 2rem;
+    position: relative;
+}
+body form .login input{
+    width: 100%;
+    height: 4rem;
+    border-radius: 0.5rem;
+    padding-left: 1rem;
+    background-color: #ffffffcc;
+}
+body form .login input:focus{
+    outline: none;
+}
+body form .login span{
+    font-size: 2rem;
+    position: absolute;
+    top: 0.5rem;
+    left: 1rem;
+    color: #757575;
+    text-transform: capitalize;
+    cursor: text;
+    display: inline-block;
+    padding: 0.2rem 1rem;
+    box-sizing: content-box;
+    transition: 0.2s;
+}
+body form .login input:focus+span,
+body form .login input:valid+span{
+    font-size: 1rem;
+    color: #ffffff;
+    background-color: black;
+    top: -1rem;
+    left: 0.5rem;
+}
+
+body form .login button{
+    font-size: 2rem;
+    padding: 0.5rem 5rem;
+    border-radius: 0.5rem;
+    display: block;
+    margin: 0px auto;
+    background-color: #0096FF;
+    cursor:pointer;
+}
+body form .login button:active{
+    background-color: #0070c1;
+}
